@@ -1,0 +1,55 @@
+.dashboard-content {
+    padding: 20px;
+    color: inherit; /* Inherit color based on the theme */
+  }
+  
+  .row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute the space between the cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 20px;
+  }
+  
+  .metric-box,
+  .chart-container {
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: inherit; /* Inherit background color from theme */
+    color: inherit; /* Inherit text color from theme */
+    flex: 1; /* Make each box take equal width */
+    margin-right: 20px; /* Add space between cards */
+  }
+  
+  .metric-box h3,
+  .chart-container h3 {
+    margin-bottom: 10px;
+    color: inherit; /* Inherit text color from theme */
+  }
+  
+  .chart-container {
+    width: 48%;
+    height: 250px;
+  }
+  
+  /* Remove margin-right for the last card in the row */
+  .metric-box:last-child {
+    margin-right: 0;
+  }
+  
+  /* Optional: Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .metric-box,
+    .chart-container {
+      width: 100%;
+      margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+  }
+ 

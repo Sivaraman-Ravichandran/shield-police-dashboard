@@ -1,0 +1,8 @@
+.crime-trends {
+  background-color: inherit;
+  color: inherit;
+  padding: 20px;
+  margin: 0 20px; /* Equal margin on both sides */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,34 @@
+/* NeighbourhoodRankingChart.css */
+
+.chart-container {
+  background-color: inherit; /* Inherit background color based on the global theme */
+  color: inherit; /* Inherit text color based on the global theme */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 100%; /* Prevent stretching */
+  max-width: 600px; /* Optional: Set a max width to avoid chart expanding too much */
+  margin: 0 auto; /* Center the chart horizontally */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.chart-container h3 {
+  margin-bottom: 20px;
+  color: inherit; /* Inherit text color based on the theme */
+}
+
+/* Ensure the chart inside the container is static */
+.chart-container canvas {
+  pointer-events: none; /* Disable any mouse interaction with the chart */
+  width: 100% !important; /* Ensure the chart doesn't stretch beyond its container */
+  height: auto !important; /* Maintain aspect ratio, prevent vertical stretching */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

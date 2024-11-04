@@ -1,0 +1,17 @@
+/* VideoStream.css */
+.video-stream-container {
+    text-align: center;
+  }
+  
+  .video-stream {
+    max-width: 100%;  /* Ensure it doesn't exceed the container's width */
+    max-height: 500px; /* Limit the height to 500px */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
